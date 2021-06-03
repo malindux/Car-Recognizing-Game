@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Assignment 01 Application</string>
+    <string name="indentify_the_car_make">Indentify the car make</string>
+    <string name="indentify_the_car_image">Indentify the car image</string>
+    <string name="hints">Hints</string>
+    <string name="advanced_level">Advanced Level</string>
+    <string name="select_a_model">Select a Model</string>
+    <string name="car_image">Car Image</string>
+    <string name="identify">Identify</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="guess_the_model">Guess the Model</string>
+    <string name="guess_a_letter">Guess a letter</string>
+    <string name="answer">Answer</string>
+    <string name="timer">Timer</string>
+    <string name="type_model">Type Model</string>
+    <string name="welcome">WELCOME</string>
+    <string name="model_logo_todo">Model Logo</string>
+    <string name="type_a_letter">Type a Letter</string>
+
+    <string-array name="models_array">
+        <item>Mercedes</item>
+        <item>BMW</item>
+        <item>Audi</item>
+        <item>Lamborghini</item>
+        <item>Toyota</item>
+    </string-array>
+
+</resources>

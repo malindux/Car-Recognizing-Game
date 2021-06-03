@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252323"
+    tools:context=".HintsActivity">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="304dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:textColor="#FFEB3B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <ImageView
+        android:id="@+id/carImg"
+        android:layout_width="314dp"
+        android:layout_height="243dp"
+        android:contentDescription="@string/car_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <TextView
+        android:id="@+id/selectModel_header"
+        android:layout_width="161dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="@string/guess_the_model"
+        android:textColor="#FFEB3B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carImg"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <TextView
+        android:id="@+id/model"
+        android:layout_width="279dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="240dp"
+        android:gravity="center"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectModel_header"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="124dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="60dp"
+        android:background="#FFEB3B"
+        android:onClick="submitGuess"
+        android:textStyle="bold"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="124dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="60dp"
+        android:background="#FFEB3B"
+        android:onClick="next"
+        android:text="@string/next"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="119dp"
+        android:layout_height="98dp"
+        android:textColorHint="@color/yellow"
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/model"
+        app:layout_constraintVertical_bias="0.509">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/guessedWord"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="@color/yellow"
+            android:gravity="center_horizontal"
+            android:maxLength="1"
+            android:hint="@string/type_a_letter"
+            android:imeOptions="actionGo"
+            android:inputType="text"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
